@@ -1,0 +1,12 @@
+@import "pallette";
+
+.about {
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+
+    &__heading {
+        padding: 10px 50px;
+        color: $primary-color;
+    }
+}

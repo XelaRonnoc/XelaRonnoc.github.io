@@ -1,0 +1,17 @@
+@use "header";
+@use "about";
+@import "pallette";
+
+body {
+    background-color: $base-color;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 20px 50px 20px;
+}
+
+.home {
+    color: $primary-color;
+}
