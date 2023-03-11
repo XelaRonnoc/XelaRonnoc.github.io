@@ -1,0 +1,27 @@
+@import "pallette";
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+
+    &__bar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5%;
+        //  border: $test-border yellow;
+        gap: 20px;
+    }
+
+    &__bar > a:link {
+        color: $primary-color;
+    }
+
+    &__bar > a:visited {
+        color: $primary-color;
+    }
+
+    &__bar > a:hover {
+        color: $link-active-color;
+    }
+}

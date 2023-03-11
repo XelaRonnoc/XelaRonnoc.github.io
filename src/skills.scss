@@ -1,0 +1,29 @@
+@import "pallette";
+
+.skills {
+    // border: $test-border coral;
+
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr 2fr;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1% 5%;
+        gap: 10px;
+    }
+}
+
+.container {
+    &__logo {
+        color: $primary-color;
+        //  border: $test-border crimson;
+    }
+
+    &__desc {
+        color: $text-color;
+    }
+}

@@ -1,0 +1,34 @@
+@import "pallette";
+
+.head-container {
+    // border: $test-border yellowgreen;
+    display: flex;
+    justify-content: space-between;
+
+    &__nav-bar {
+        border: 2px solid $border-color;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        margin: 20px;
+    }
+    &__logo > img {
+        //  border: $test-border green;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.lnks:link {
+    color: $primary-color;
+}
+
+.lnks:visited {
+    color: $primary-color;
+}
+
+.lnks:hover {
+    color: $link-active-color;
+}
