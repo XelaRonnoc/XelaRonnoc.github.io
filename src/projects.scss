@@ -1,0 +1,21 @@
+@import "pallette";
+
+.projects {
+    display: flex;
+    flex-direction: column;
+
+    &__project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 5% 1%;
+        gap: 50px;
+    }
+}
+
+.project-container {
+    &__text-container {
+        max-width: 400px;
+        margin: 5%;
+    }
+}

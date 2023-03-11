@@ -1,5 +1,7 @@
 @use "header";
 @use "about";
+@use "skills";
+@use "projects";
 @import "pallette";
 
 body {
@@ -8,10 +10,18 @@ body {
 
 main {
     display: flex;
+    justify-content: space-around;
+}
+
+.page-holder {
+    border: $test-border blue;
+    display: flex;
     flex-direction: column;
     margin: 100px 20px 50px 20px;
+    max-width: 3000px;
 }
 
 .home {
+    border: $test-border purple;
     color: $primary-color;
 }

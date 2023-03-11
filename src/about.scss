@@ -2,11 +2,32 @@
 
 .about {
     display: flex;
-    justify-content: flex-end;
-    margin: 50px;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 5%;
+    border: $test-border orange;
+    flex-wrap: wrap;
 
+    &__about-text {
+        border: $test-border hotpink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about-text-container {
     &__heading {
-        padding: 10px 50px;
+        text-align: center;
+
+        border: $test-border red;
         color: $primary-color;
+    }
+
+    &__para {
+        border: $test-border grey;
+        max-height: 400px;
+        max-width: 400px;
+        color: $text-color;
     }
 }
