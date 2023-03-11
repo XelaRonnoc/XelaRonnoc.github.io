@@ -1,5 +1,4 @@
 .head-container {
-  border: 3px solid yellowgreen;
   display: flex;
   justify-content: space-between;
 }
@@ -13,33 +12,30 @@
   margin: 20px;
 }
 .head-container__logo > img {
-  border: 3px solid green;
   width: 50px;
   height: 50px;
 }
 
 .lnks:link {
-  color: #6320ee;
+  color: #2692ea;
 }
 
 .lnks:visited {
-  color: #6320ee;
+  color: #2692ea;
 }
 
 .lnks:hover {
-  color: #2692ea;
+  color: #6320ee;
 }
 
 .about {
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   margin: 5%;
-  border: 3px solid orange;
   flex-wrap: wrap;
 }
 .about__about-text {
-  border: 3px solid hotpink;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,18 +43,15 @@
 
 .about-text-container__heading {
   text-align: center;
-  border: 3px solid red;
   color: #2692ea;
 }
 .about-text-container__para {
-  border: 3px solid grey;
   max-height: 400px;
   max-width: 400px;
   color: #e1eff6;
 }
 
 .skills {
-  border: 3px solid coral;
   display: flex;
   flex-direction: column;
 }
@@ -74,7 +67,6 @@
 
 .container__logo {
   color: #2692ea;
-  border: 3px solid crimson;
 }
 .container__desc {
   color: #e1eff6;
@@ -88,13 +80,43 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 5% 1%;
+  padding: 5% 10%;
   gap: 50px;
+}
+.projects__project-container--reversed {
+  flex-wrap: wrap-reverse;
 }
 
 .project-container__text-container {
   max-width: 400px;
   margin: 5%;
+}
+.project-container__text-container > h2 {
+  color: #2692ea;
+}
+.project-container__text-container > p {
+  color: #e1eff6;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+.contact__bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5%;
+  gap: 20px;
+}
+.contact__bar > a:link {
+  color: #2692ea;
+}
+.contact__bar > a:visited {
+  color: #2692ea;
+}
+.contact__bar > a:hover {
+  color: #6320ee;
 }
 
 body {
@@ -107,14 +129,13 @@ main {
 }
 
 .page-holder {
-  border: 3px solid blue;
   display: flex;
   flex-direction: column;
-  margin: 100px 20px 50px 20px;
-  max-width: 3000px;
+  margin: 100px 20px 0px 20px;
+  max-width: 1500px;
 }
 
 .home {
-  border: 3px solid purple;
   color: #2692ea;
+  font-size: 40px;
 }

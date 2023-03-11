@@ -8,8 +8,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 5% 1%;
+        padding: 5% 10%;
         gap: 50px;
+
+        &--reversed {
+            flex-wrap: wrap-reverse;
+        }
     }
 }
 
@@ -17,5 +21,13 @@
     &__text-container {
         max-width: 400px;
         margin: 5%;
+    }
+
+    &__text-container > h2 {
+        color: $primary-color;
+    }
+
+    &__text-container > p {
+        color: $text-color;
     }
 }

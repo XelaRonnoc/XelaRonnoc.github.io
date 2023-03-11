@@ -1,7 +1,7 @@
 @import "pallette";
 
 .skills {
-    border: $test-border coral;
+    // border: $test-border coral;
 
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@
 .container {
     &__logo {
         color: $primary-color;
-        border: $test-border crimson;
+        //  border: $test-border crimson;
     }
 
     &__desc {

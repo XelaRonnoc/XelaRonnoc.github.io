@@ -2,6 +2,7 @@
 @use "about";
 @use "skills";
 @use "projects";
+@use "contact";
 @import "pallette";
 
 body {
@@ -14,14 +15,15 @@ main {
 }
 
 .page-holder {
-    border: $test-border blue;
+    //border: $test-border blue;
     display: flex;
     flex-direction: column;
-    margin: 100px 20px 50px 20px;
-    max-width: 3000px;
+    margin: 100px 20px 0px 20px;
+    max-width: 1500px;
 }
 
 .home {
-    border: $test-border purple;
+    // border: $test-border purple;
     color: $primary-color;
+    font-size: 40px;
 }
