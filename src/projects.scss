@@ -1,4 +1,5 @@
-@import "pallette";
+@use "pallette";
+@use "mixins";
 
 .projects {
     display: flex;
@@ -6,8 +7,8 @@
 
     &__header {
         margin: 50px 0px 0px 0px;
-        color: $primary-color;
-        font-size: 36px;
+        color: pallette.$primary-color;
+        font-size: pallette.$secondary-heading-size;
     }
 
     &__project-container {
@@ -30,10 +31,10 @@
     }
 
     &__text-container > h2 {
-        color: $primary-color;
+        color: pallette.$primary-color;
     }
 
     &__text-container > p {
-        color: $text-color;
+        color: pallette.$text-color;
     }
 }

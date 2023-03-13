@@ -1,12 +1,14 @@
 @use "header";
+@use "landing";
 @use "about";
 @use "skills";
 @use "projects";
 @use "contact";
-@import "pallette";
+@use "pallette";
+@use "mixins";
 
 body {
-    background-color: $base-color;
+    background-color: pallette.$base-color;
 }
 
 main {
@@ -15,15 +17,26 @@ main {
 }
 
 .page-holder {
-    //border: $test-border blue;
     display: flex;
     flex-direction: column;
     margin: 100px 20px 0px 20px;
     max-width: 1500px;
 }
 
-.home {
-    // border: $test-border purple;
-    color: $primary-color;
-    font-size: 40px;
+.heading {
+    @include mixins.tablet {
+        text-align: center;
+    }
+    @include mixins.phone {
+        text-align: center;
+    }
+}
+
+.para {
+    @include mixins.tablet {
+        text-align: center;
+    }
+    @include mixins.phone {
+        text-align: center;
+    }
 }

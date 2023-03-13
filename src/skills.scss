@@ -1,20 +1,20 @@
-@import "pallette";
+@use "pallette";
 
 .skills {
     &__header {
-        color: $primary-color;
-        font-size: 36px;
+        color: pallette.$primary-color;
+        font-size: pallette.$secondary-heading-size;
     }
-
+}
+.logos {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
 
     &__container {
-        display: grid;
-        grid-auto-flow: row;
-        grid-template-columns: 1fr 2fr;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
         padding: 3% 5%;
         gap: 10px;
         align-items: center;
@@ -28,6 +28,6 @@
     }
 
     &__desc {
-        color: $text-color;
+        color: pallette.$text-color;
     }
 }

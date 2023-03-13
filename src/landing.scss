@@ -1,0 +1,6 @@
+@use "pallette";
+
+.home {
+    color: pallette.$primary-color;
+    font-size: pallette.$heading-size;
+}

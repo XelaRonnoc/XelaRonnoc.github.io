@@ -1,4 +1,4 @@
-@import "pallette";
+@use "pallette";
 
 header {
     background-color: black;
@@ -32,13 +32,13 @@ header {
 }
 
 .lnks:link {
-    color: $primary-color;
+    color: pallette.$primary-color;
 }
 
 .lnks:visited {
-    color: $primary-color;
+    color: pallette.$primary-color;
 }
 
 .lnks:hover {
-    color: $link-active-color;
+    color: pallette.$link-active-color;
 }
