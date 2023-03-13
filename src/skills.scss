@@ -1,7 +1,10 @@
 @import "pallette";
 
 .skills {
-    // border: $test-border coral;
+    &__header {
+        color: $primary-color;
+        font-size: 36px;
+    }
 
     display: flex;
     flex-direction: column;
@@ -12,15 +15,16 @@
         grid-template-columns: 1fr 2fr;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 1% 5%;
+        padding: 3% 5%;
         gap: 10px;
+        align-items: center;
     }
 }
 
 .container {
     &__logo {
-        color: $primary-color;
-        //  border: $test-border crimson;
+        width: 100px;
+        height: 100px;
     }
 
     &__desc {

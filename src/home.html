@@ -16,21 +16,21 @@
                 />
             </div>
             <nav class="head-container__nav-bar">
-                <a class="lnks" href="">Home</a>
-                <a class="lnks" href="">About</a>
-                <a class="lnks" href="">Skills</a>
-                <a class="lnks" href="">Projects</a>
-                <a class="lnks" href="">Contact</a>
+                <a class="lnks" href="#homePage">Home</a>
+                <a class="lnks" href="#aboutPage">About</a>
+                <a class="lnks" href="#skillsPage">Skills</a>
+                <a class="lnks" href="#projectPage">Projects</a>
+                <a class="lnks" href="#contactPage">Contact</a>
             </nav>
         </header>
 
         <main>
             <section class="page-holder">
-                <section class="home">
-                    <h1>Alex Milton: Trainee Software Developer</h1>
+                <section id="homePage" class="home">
+                    <h1 class="home__header">Alex Milton: Trainee Software Developer</h1>
                 </section>
 
-                <section class="about">
+                <section id="aboutPage" class="about">
                     <img
                         class="about__img"
                         src="http://placekitten.com/200/300"
@@ -48,9 +48,15 @@
                     </div>
                 </section>
 
-                <section class="skills">
+                <section id="skillsPage" class="skills">
+                    <h2 class="skills__header">Languages and stacks:</h2>
                     <div class="skills__container">
-                        <h1 class="container__logo">HTML</h1>
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                            alt="HTML 5"
+                        />
+                        <!-- <h1 class="container__logo">HTML</h1> -->
                         <p class="container__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Dolorem sequi quo recusandae pariatur
@@ -60,7 +66,19 @@
                     </div>
 
                     <div class="skills__container">
-                        <h1 class="container__logo">CSS</h1>
+                        <div>
+                            <img
+                                class="container__logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                                alt="SASS"
+                            />
+                            <img
+                                class="container__logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                                alt="CSS"
+                            />
+                        </div>
+                        <!-- <h1 class="container__logo">CSS/SCSS</h1> -->
                         <p class="container__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Dolorem sequi quo recusandae pariatur
@@ -69,7 +87,12 @@
                         </p>
                     </div>
                     <div class="skills__container">
-                        <h1 class="container__logo">SCSS</h1>
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript"
+                        />
+                        <!-- <h1 class="container__logo">SCSS</h1> -->
                         <p class="container__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Dolorem sequi quo recusandae pariatur
@@ -78,7 +101,12 @@
                         </p>
                     </div>
                     <div class="skills__container">
-                        <h1 class="container__logo">Java</h1>
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                            alt="ReactJS"
+                        />
+                        <!-- <h1 class="container__logo">Java</h1> -->
                         <p class="container__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Dolorem sequi quo recusandae pariatur
@@ -87,7 +115,12 @@
                         </p>
                     </div>
                     <div class="skills__container">
-                        <h1 class="container__logo">C#</h1>
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
+                            alt="Firebase"
+                        />
+                        <!-- <h1 class="container__logo">C#</h1> -->
                         <p class="container__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Dolorem sequi quo recusandae pariatur
@@ -96,7 +129,12 @@
                         </p>
                     </div>
                     <div class="skills__container">
-                        <h1 class="container__logo">Unreal Engine 5</h1>
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                            alt="mySQL"
+                        />
+                        <!-- <h1 class="container__logo">Unreal Engine 5</h1> -->
                         <p class="container__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Dolorem sequi quo recusandae pariatur
@@ -105,9 +143,11 @@
                         </p>
                     </div>
                     <div class="skills__container">
-                        <h1 class="container__logo">
-                            Object Oriented Programing
-                        </h1>
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+                            alt="Java"
+                        />
                         <p class="container__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Dolorem sequi quo recusandae pariatur
@@ -116,7 +156,95 @@
                         </p>
                     </div>
                     <div class="skills__container">
-                        <h1 class="container__logo">Git</h1>
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"
+                            alt="spring"
+                        />
+                        <p class="container__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem sequi quo recusandae pariatur
+                            doloremque magnam necessitatibus harum vitae? Harum,
+                            laboriosam?
+                        </p>
+                    </div>
+
+                    <div class="skills__container">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+                            alt="java"
+                        />
+                        <p class="container__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem sequi quo recusandae pariatur
+                            doloremque magnam necessitatibus harum vitae? Harum,
+                            laboriosam?
+                        </p>
+                    </div>
+
+                    <div class="skills__container">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+                            alt="git"
+                        />
+                        <p class="container__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem sequi quo recusandae pariatur
+                            doloremque magnam necessitatibus harum vitae? Harum,
+                            laboriosam?
+                        </p>
+                    </div>
+
+                    <div class="skills__container">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                            alt="AWS"
+                        />
+                        <p class="container__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem sequi quo recusandae pariatur
+                            doloremque magnam necessitatibus harum vitae? Harum,
+                            laboriosam?
+                        </p>
+                    </div>
+
+                    <div class="skills__container">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                            alt="C Sharp"
+                        />
+                        <p class="container__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem sequi quo recusandae pariatur
+                            doloremque magnam necessitatibus harum vitae? Harum,
+                            laboriosam?
+                        </p>
+                    </div>
+
+                    <div class="skills__container">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg"
+                            alt="Unity"
+                        />
+                        <p class="container__desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Dolorem sequi quo recusandae pariatur
+                            doloremque magnam necessitatibus harum vitae? Harum,
+                            laboriosam?
+                        </p>
+                    </div>
+
+                    <div class="skills__container">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg"
+                            alt="Unreal Engine"
+                        />
                         <p class="container__desc">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Dolorem sequi quo recusandae pariatur
@@ -126,7 +254,8 @@
                     </div>
                 </section>
 
-                <section class="projects">
+                <section id="projectPage" class="projects">
+                    <h2 class="projects__header">Projects:</h1>
                     <div class="projects__project-container">
                         <img
                             clas="project-container__img"
@@ -224,13 +353,23 @@
             </section>
         </main>
 
-        <footer class="contact">
+        <footer id="contactPage" class="contact">
+            <h2 class="contact__heading">Also find me here:</h2>
             <div class="contact__bar">
-                <a href="https://github.com/XelaRonnoc">Github</a>
-                <a href="https://www.linkedin.com/in/alex-milton-2b72981a7"
-                    >LinkedIn</a
-                >
-                <p>Email: alexcmilton@gmail.com</p>
+                <a href="https://github.com/XelaRonnoc">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub Link"
+                    />
+                </a>
+                <a href="https://www.linkedin.com/in/alex-milton-2b72981a7">                    
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" 
+                        alt="LinkedIn"
+                    /></a>
+
+                </a>
+                <a href="mailto:alexcmilton@gmail.com">alexcmilton@gmail.com </a>
             </div>
         </footer>
     </body>

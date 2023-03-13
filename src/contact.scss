@@ -2,7 +2,13 @@
 
 .contact {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__heading {
+        color: $primary-color;
+        align-self: center;
+    }
 
     &__bar {
         display: flex;
@@ -11,6 +17,11 @@
         margin: 5%;
         //  border: $test-border yellow;
         gap: 20px;
+    }
+
+    &__bar img {
+        width: 25px;
+        height: 25px;
     }
 
     &__bar > a:link {

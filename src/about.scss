@@ -4,8 +4,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5%;
-    // border: $test-border orange;
+    padding: 3%;
+    margin: 2%;
+    //border: $test-border orange;
     flex-wrap: wrap;
 
     &__about-text {
