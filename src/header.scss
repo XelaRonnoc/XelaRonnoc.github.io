@@ -10,12 +10,10 @@ header {
 }
 
 .head-container {
-    //border: $test-border yellowgreen;
     display: flex;
     justify-content: space-between;
 
     &__nav-bar {
-        // border: 2px solid $border-color;
         padding: 5px;
         display: flex;
         flex-wrap: wrap;
@@ -23,22 +21,57 @@ header {
         align-items: center;
         gap: 20px;
         margin: 0px 20px;
+
+        &--lnk {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            cursor: pointer;
+            white-space: nowrap;
+            background-color: #009578; // placeholder color for links
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 0.2s;
+        }
+
+        &--lnk:link {
+            color: pallette.$primary-color;
+        }
+
+        &--lnk:visited {
+            color: pallette.$primary-color;
+        }
+
+        &--lnk:hover {
+            color: pallette.$link-active-color;
+            background-color: #007f66; // darker background placeholder colour for links
+        }
+
+        &--lnk:hover &--group {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0px);
+            transition: opacity 0.2s visibility 0.2s transform 0.2s;
+        }
+
+        &--group {
+            position: absolute;
+            top: 100%;
+            right: 1%;
+            min-width: 100%;
+            box-shadow: 0 0 5px rgba (0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+        }
     }
     &__logo > img {
-        //  border: $test-border green;
         width: 50px;
         height: 50px;
     }
 }
 
-.lnks:link {
+.icon {
     color: pallette.$primary-color;
-}
-
-.lnks:visited {
-    color: pallette.$primary-color;
-}
-
-.lnks:hover {
-    color: pallette.$link-active-color;
 }
