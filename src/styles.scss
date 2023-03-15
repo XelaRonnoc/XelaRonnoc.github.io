@@ -24,19 +24,13 @@ main {
 }
 
 .heading {
-    @include mixins.tablet {
-        text-align: center;
-    }
-    @include mixins.phone {
+    @include mixins.mobile-device {
         text-align: center;
     }
 }
 
 .para {
-    @include mixins.tablet {
-        text-align: center;
-    }
-    @include mixins.phone {
+    @include mixins.mobile-device {
         text-align: center;
     }
 }
