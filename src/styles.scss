@@ -17,6 +17,7 @@ main {
 }
 
 .page-holder {
+    padding: 50px;
     display: flex;
     flex-direction: column;
     margin: 100px 20px 0px 20px;
@@ -32,5 +33,19 @@ main {
 .para {
     @include mixins.mobile-device {
         text-align: center;
+    }
+}
+
+@include mixins.monitor {
+    .reveal {
+        height: 99vh;
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 2s all ease;
+    }
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

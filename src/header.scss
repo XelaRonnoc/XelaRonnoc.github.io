@@ -8,6 +8,14 @@ header {
     left: 0;
     z-index: 999;
     width: 100%;
+
+    opacity: 50%;
+    transition: opacity 1s;
+
+    &:hover {
+        opacity: 100%;
+        transition: opacity 1s;
+    }
 }
 
 .header-container {
@@ -25,6 +33,12 @@ header {
         gap: 20px;
         background-color: #009578;
 
+        &--lnk {
+            font-weight: bold;
+            text-decoration: none;
+            color: pallette.$text-color;
+        }
+
         @include mixins.mobile-device {
             &--lnk {
                 position: relative;
@@ -40,11 +54,11 @@ header {
             }
 
             &--lnk:link {
-                color: pallette.$primary-color;
+                color: pallette.$text-color;
             }
 
             &--lnk:visited {
-                color: pallette.$primary-color;
+                color: pallette.$text-color;
             }
 
             &--lnk:hover {

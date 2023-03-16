@@ -3,8 +3,12 @@
 
 .contact {
     display: flex;
-    // flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 2vw;
+    left: 1vw;
+    z-index: 999;
 
     @include mixins.phone {
         flex-direction: column;
@@ -17,15 +21,18 @@
 
     &__bar {
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         margin: 5%;
         gap: 20px;
+        font-size: 24px;
     }
 
     &__bar img {
         width: 25px;
         height: 25px;
+        writing-mode: vertical-lr;
     }
 
     &__bar > a:link {
@@ -39,4 +46,13 @@
     &__bar > a:hover {
         color: pallette.$link-active-color;
     }
+}
+
+#pipes {
+    color: pallette.$text-color;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
 }
