@@ -78,9 +78,7 @@ header {
                 align-items: center;
                 justify-content: center;
             }
-            &--icon {
-                display: none;
-            }
+
             &--group {
                 display: flex;
                 justify-content: left;
@@ -105,6 +103,13 @@ header {
                 color: pallette.$link-active-color;
                 background-color: #007f66;
             }
+
+            &--icon {
+                display: none;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+            }
         }
     }
 
@@ -116,8 +121,4 @@ header {
             padding: 5px;
         }
     }
-}
-
-.icon {
-    color: pallette.$primary-color;
 }
