@@ -9,13 +9,13 @@ header {
     z-index: 999;
     width: 100%;
 
-    opacity: 50%;
-    transition: opacity 1s;
+    // opacity: 50%;
+    // transition: opacity 1s;
 
-    &:hover {
-        opacity: 100%;
-        transition: opacity 1s;
-    }
+    // &:hover {
+    //     opacity: 100%;
+    //     transition: opacity 1s;
+    // }
 }
 
 .header-container {
@@ -82,6 +82,10 @@ header {
                 opacity: 0;
                 visibility: hidden;
                 transform: translateY(-10px);
+            }
+
+            &--outer-lnk > i {
+                font-size: 32px;
             }
         }
         @include mixins.monitor {

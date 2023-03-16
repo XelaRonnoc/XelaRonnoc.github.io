@@ -1,6 +1,8 @@
 @use "pallette";
 
 .skills {
+    display: flex;
+
     &__header {
         color: pallette.$primary-color;
         font-size: pallette.$secondary-heading-size;

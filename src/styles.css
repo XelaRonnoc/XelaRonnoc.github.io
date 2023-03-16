@@ -5,12 +5,6 @@ header {
   left: 0;
   z-index: 999;
   width: 100%;
-  opacity: 50%;
-  transition: opacity 1s;
-}
-header:hover {
-  opacity: 100%;
-  transition: opacity 1s;
 }
 
 .header-container {
@@ -72,6 +66,9 @@ header:hover {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
+  }
+  .header-container__nav-bar--outer-lnk > i {
+    font-size: 32px;
   }
 }
 @media only screen and (min-width: 1198px) {
@@ -190,6 +187,9 @@ header:hover {
   color: #e1eff6;
 }
 
+.skills {
+  display: flex;
+}
 .skills__header {
   color: #2692ea;
   font-size: 36px;
@@ -299,6 +299,26 @@ header:hover {
   gap: 0;
 }
 
+.contactBottom {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #e1eff6;
+}
+
+.contactBottom > a:link {
+  color: #2692ea;
+}
+
+.contactBottom > a:visited {
+  color: #2692ea;
+}
+
+.contactBottom > a:hover {
+  color: #6320ee;
+}
+
 body {
   background-color: #1a1c23;
 }
@@ -330,7 +350,6 @@ main {
 
 @media only screen and (min-width: 1198px) {
   .reveal {
-    height: 99vh;
     position: relative;
     transform: translateY(150px);
     opacity: 0;

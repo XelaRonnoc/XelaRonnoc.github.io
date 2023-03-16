@@ -56,3 +56,23 @@
     padding: 0;
     gap: 0;
 }
+
+.contactBottom {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    color: pallette.$text-color;
+}
+
+.contactBottom > a:link {
+    color: pallette.$primary-color;
+}
+
+.contactBottom > a:visited {
+    color: pallette.$primary-color;
+}
+
+.contactBottom > a:hover {
+    color: pallette.$link-active-color;
+}
