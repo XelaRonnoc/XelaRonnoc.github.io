@@ -189,6 +189,7 @@ header {
 
 .skills {
   display: flex;
+  flex-wrap: wrap;
 }
 .skills__header {
   color: #2692ea;

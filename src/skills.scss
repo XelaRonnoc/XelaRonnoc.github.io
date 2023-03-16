@@ -2,6 +2,7 @@
 
 .skills {
     display: flex;
+    flex-wrap: wrap;
 
     &__header {
         color: pallette.$primary-color;
