@@ -39,4 +39,22 @@
     &__text-container > p {
         color: pallette.$text-color;
     }
+
+    &__text-container a {
+        text-decoration: none;
+        color: pallette.$primary-color;
+    }
+
+    &__text-container a:link {
+        text-decoration: none;
+        color: pallette.$primary-color;
+    }
+    &__text-container a:visited {
+        text-decoration: none;
+        color: pallette.$primary-color;
+    }
+    &__text-container a:hover {
+        text-decoration: none;
+        color: pallette.$link-active-color;
+    }
 }
