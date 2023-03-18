@@ -2,20 +2,12 @@
 @use "mixins";
 
 header {
-    background-color: #009578;
+    background-color: pallette.$border-color;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     width: 100%;
-
-    // opacity: 50%;
-    // transition: opacity 1s;
-
-    // &:hover {
-    //     opacity: 100%;
-    //     transition: opacity 1s;
-    // }
 }
 
 .header-container {
@@ -31,7 +23,7 @@ header {
         justify-content: center;
         align-items: center;
         gap: 20px;
-        background-color: #009578;
+        background-color: pallette.$border-color;
 
         &--lnk {
             font-weight: bold;
@@ -47,7 +39,7 @@ header {
                 text-decoration: none;
                 cursor: pointer;
                 white-space: nowrap;
-                background-color: #009578; // placeholder color for links
+                background-color: pallette.$border-color; // placeholder color for links
                 user-select: none;
                 -webkit-tap-highlight-color: transparent;
                 transition: background-color 0.2s;
@@ -62,8 +54,8 @@ header {
             }
 
             &--lnk:hover {
-                color: pallette.$link-active-color;
-                background-color: #007f66; // darker background placeholder colour for links
+                color: pallette.$text-color;
+                background-color: pallette.$border-color-dark; // darker background placeholder colour for links
             }
 
             &--lnk:hover &--group {
@@ -102,10 +94,11 @@ header {
                 justify-content: left;
                 height: 100%;
                 align-items: center;
-                background-color: #009578;
+                background-color: pallette.$border-color;
             }
 
             &--inner-lnk {
+                border-radius: 12px;
                 padding: 10px;
                 max-height: 50%;
                 width: 100px;
@@ -118,8 +111,8 @@ header {
             }
 
             &--inner-lnk:hover {
-                color: pallette.$link-active-color;
-                background-color: #007f66;
+                color: pallette.$text-color;
+                background-color: pallette.$border-color-dark;
             }
 
             &--icon {
@@ -133,7 +126,7 @@ header {
 
     &__logo {
         grid-column: 1 / 2;
-        background-color: #009578;
+        background-color: pallette.$border-color;
         &--heading {
             color: pallette.$text-color;
             padding: 5px;

@@ -3,6 +3,7 @@
 .skills {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: pallette.$content-spacing;
 
     &__header {
         color: pallette.$primary-color;

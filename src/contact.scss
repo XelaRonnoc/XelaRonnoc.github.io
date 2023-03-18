@@ -57,22 +57,33 @@
     gap: 0;
 }
 
-.contactBottom {
+.contact-bottom {
     display: flex;
     gap: 30px;
     align-items: center;
     justify-content: center;
     color: pallette.$text-color;
+    font-size: 24px;
+    margin-bottom: pallette.$content-spacing;
+
+    &__links {
+        display: flex;
+        gap: 20px;
+    }
+
+    @include mixins.mobile-device {
+        flex-wrap: wrap;
+    }
 }
 
-.contactBottom > a:link {
+.contact-bottom > div > a:link {
     color: pallette.$primary-color;
 }
 
-.contactBottom > a:visited {
+.contact-bottom > div > a:visited {
     color: pallette.$primary-color;
 }
 
-.contactBottom > a:hover {
+.contact-bottom > div > a:hover {
     color: pallette.$link-active-color;
 }

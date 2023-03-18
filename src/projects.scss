@@ -4,9 +4,10 @@
 .projects {
     display: flex;
     flex-direction: column;
+    margin-bottom: pallette.$content-spacing;
 
     &__header {
-        margin: 50px 0px 0px 0px;
+        margin: 0px;
         color: pallette.$primary-color;
         font-size: pallette.$secondary-heading-size;
     }

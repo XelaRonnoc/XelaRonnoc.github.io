@@ -1,8 +1,12 @@
 @use "pallette";
 
 .home {
+    display: flex;
     color: pallette.$primary-color;
     font-size: pallette.$heading-size;
+    align-items: center;
+    height: 90vh;
+
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
