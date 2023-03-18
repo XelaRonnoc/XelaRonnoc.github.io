@@ -193,6 +193,10 @@ header {
   max-width: 400px;
   color: #f6f7f8;
 }
+.about__img {
+  height: 300px;
+  width: 225px;
+}
 
 .skills {
   display: flex;
