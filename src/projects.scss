@@ -27,8 +27,9 @@
 
 .project-container {
     &__text-container {
+        padding: 10px;
         max-width: 400px;
-        margin: 5%;
+        margin: 3%;
     }
 
     &__text-container > h2 {

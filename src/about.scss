@@ -11,6 +11,7 @@
     gap: 50px;
 
     &__text {
+        padding: 10px;
         &--heading {
             font-size: pallette.$tertiary-Heading-size;
             color: pallette.$primary-color;

@@ -11,7 +11,7 @@ header {
   display: flex;
   gap: 20px;
 }
-@media only screen and (max-width: 1197px) {
+@media only screen and (max-width: 1179px) {
   .header-container {
     justify-content: space-between;
   }
@@ -28,7 +28,7 @@ header {
   text-decoration: none;
   color: #f6f7f8;
 }
-@media only screen and (max-width: 1197px) {
+@media only screen and (max-width: 1179px) {
   .header-container__nav-bar--lnk {
     position: relative;
     display: block;
@@ -71,7 +71,7 @@ header {
     font-size: 32px;
   }
 }
-@media only screen and (min-width: 1198px) {
+@media only screen and (min-width: 1180px) {
   .header-container__nav-bar {
     width: 80%;
   }
@@ -181,6 +181,9 @@ header {
   flex-wrap: wrap;
   gap: 50px;
 }
+.about__text {
+  padding: 10px;
+}
 .about__text--heading {
   font-size: 24px;
   color: #20a4f3;
@@ -245,8 +248,9 @@ header {
 }
 
 .project-container__text-container {
+  padding: 10px;
   max-width: 400px;
-  margin: 5%;
+  margin: 3%;
 }
 .project-container__text-container > h2 {
   color: #20a4f3;
@@ -319,7 +323,7 @@ header {
   display: flex;
   gap: 20px;
 }
-@media only screen and (max-width: 1197px) {
+@media only screen and (max-width: 1179px) {
   .contact-bottom {
     flex-wrap: wrap;
   }
@@ -338,7 +342,7 @@ header {
 }
 
 body {
-  background-color: #022d4f;
+  background-color: #02223c;
   font-family: "Orbitron", sans-serif;
 }
 
@@ -355,19 +359,24 @@ main {
   max-width: 1500px;
 }
 
-@media only screen and (max-width: 1197px) {
+.shadow {
+  background-color: #022d4f;
+  box-shadow: 10px 10px 10px rgba(1, 11, 19, 0.5);
+}
+
+@media only screen and (max-width: 1179px) {
   .heading {
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 1197px) {
+@media only screen and (max-width: 1179px) {
   .para {
     text-align: center;
   }
 }
 
-@media only screen and (min-width: 1198px) {
+@media only screen and (min-width: 1180px) {
   .reveal {
     position: relative;
     transform: translateY(10px);

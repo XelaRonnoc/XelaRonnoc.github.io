@@ -25,6 +25,11 @@ main {
     max-width: 1500px;
 }
 
+.shadow {
+    background-color: pallette.$base-highlight;
+    box-shadow: 10px 10px 10px rgba($color: pallette.$shadow-color, $alpha: 0.5);
+}
+
 .heading {
     @include mixins.mobile-device {
         text-align: center;
