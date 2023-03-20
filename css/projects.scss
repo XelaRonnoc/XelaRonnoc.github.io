@@ -12,6 +12,7 @@
         font-size: pallette.$secondary-heading-size;
     }
 
+    // how internals of each project container is structured
     &__project-container {
         display: flex;
         flex-wrap: wrap;
@@ -19,6 +20,7 @@
         padding: 5% 10%;
         gap: 50px;
 
+        // to allow for correct wrapping style for each alternate container where the image comes after the text
         &--reversed {
             flex-wrap: wrap-reverse;
         }
@@ -40,6 +42,7 @@
         color: pallette.$text-color;
     }
 
+    //github repo link styling
     &__text-container a {
         text-decoration: none;
         color: pallette.$primary-color;
@@ -58,6 +61,7 @@
         color: pallette.$link-active-color;
     }
 
+    // reduce image size on mobile devices so as to avoid strange wrapping behaviour of other classes on very small screens
     &__img {
         @include mixins.mobile-device {
             width: 250px;

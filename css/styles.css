@@ -290,7 +290,7 @@ header {
   }
 }
 
-.contact {
+.contact-side {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -299,17 +299,7 @@ header {
   left: 1vw;
   z-index: 999;
 }
-@media only screen and (max-width: 580px) {
-  .contact {
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-.contact__heading {
-  color: #20a4f3;
-  align-self: center;
-}
-.contact__bar {
+.contact-side__bar {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -318,19 +308,20 @@ header {
   gap: 20px;
   font-size: 24px;
 }
-.contact__bar img {
-  width: 25px;
-  height: 25px;
-  writing-mode: vertical-lr;
-}
-.contact__bar > a:link {
+.contact-side__bar > a:link {
   color: #20a4f3;
 }
-.contact__bar > a:visited {
+.contact-side__bar > a:visited {
   color: #20a4f3;
 }
-.contact__bar > a:hover {
+.contact-side__bar > a:hover {
   color: #e11470;
+}
+@media only screen and (max-width: 580px) {
+  .contact-side {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 #pipes {
@@ -381,9 +372,18 @@ header {
   color: #e11470;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #02223c;
   font-family: "Orbitron", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
 }
 
 div {
@@ -392,11 +392,6 @@ div {
 
 img {
   border-radius: 10px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
 }
 
 .page-holder {
