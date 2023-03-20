@@ -177,7 +177,7 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 3%;
-  margin: 0% 2% 200px 2%;
+  margin: 0% 2% 400px 2%;
   flex-wrap: wrap;
   gap: 50px;
 }
@@ -198,30 +198,10 @@ header {
   width: 225px;
 }
 
-#homePage {
-  scroll-margin-top: 40vh;
-}
-
-#aboutPage {
-  scroll-margin-top: 40vh;
-}
-
-#skillsPage {
-  scroll-margin-top: 10vh;
-}
-
-#projectPage {
-  scroll-margin-top: 10vh;
-}
-
-#contactPage {
-  scroll-margin-top: 10vh;
-}
-
 .skills {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 .skills__header {
   color: #20a4f3;
@@ -253,7 +233,7 @@ header {
 .projects {
   display: flex;
   flex-direction: column;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 .projects__header {
   margin: 0px;
@@ -357,7 +337,7 @@ header {
   justify-content: center;
   color: #f6f7f8;
   font-size: 24px;
-  margin-bottom: 200px;
+  margin-bottom: 400px;
 }
 .contact-bottom__links {
   display: flex;
@@ -435,4 +415,23 @@ main {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+#homePage {
+  scroll-margin-top: 40vh;
+}
+
+#aboutPage {
+  scroll-margin-top: 20vh;
+}
+
+#skillsPage {
+  scroll-margin-top: 20vh;
+}
+
+#projectPage {
+  scroll-margin-top: 20vh;
+}
+
+#contactPage {
+  scroll-margin-top: 20vh;
 }
