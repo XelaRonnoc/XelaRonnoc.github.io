@@ -1,11 +1,16 @@
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150;
-        if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
+    let reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementBottom = reveals[i].getBoundingClientRect().bottom;
+        const elementVisibleDownwards = 150; // determines range within which the element is visible
+        const elementVisibleUpwards = 900; // determines range within which the element is visible
+        if (
+            elementTop < windowHeight - elementVisibleDownwards &&
+            elementBottom > windowHeight - elementVisibleUpwards
+        ) {
+            reveals[i].classList.add("active"); // adds the .active class to end of .reveal to add that functionality
         } else {
             reveals[i].classList.remove("active");
         }
