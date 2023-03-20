@@ -1,0 +1,37 @@
+@use "pallette";
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: pallette.$content-spacing;
+
+    &__header {
+        color: pallette.$primary-color;
+        font-size: pallette.$secondary-heading-size;
+    }
+}
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 3% 5%;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+.container {
+    &__logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__desc {
+        color: pallette.$text-color;
+    }
+}

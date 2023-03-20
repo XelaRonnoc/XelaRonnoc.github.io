@@ -1,0 +1,97 @@
+@use "pallette";
+@use "mixins";
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    bottom: 0vw;
+    left: 1vw;
+    z-index: 999;
+
+    @include mixins.phone {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &__heading {
+        color: pallette.$primary-color;
+        align-self: center;
+    }
+
+    &__bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5%;
+        gap: 20px;
+        font-size: 24px;
+    }
+
+    &__bar img {
+        width: 25px;
+        height: 25px;
+        writing-mode: vertical-lr;
+    }
+
+    &__bar > a:link {
+        color: pallette.$primary-color;
+    }
+
+    &__bar > a:visited {
+        color: pallette.$primary-color;
+    }
+
+    &__bar > a:hover {
+        color: pallette.$link-active-color;
+    }
+}
+
+#pipes {
+    color: pallette.$text-color;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+
+    @include mixins.mobile-landscape {
+        display: none;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.contact-bottom {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    color: pallette.$text-color;
+    font-size: 24px;
+    margin-bottom: pallette.$content-spacing;
+
+    &__links {
+        display: flex;
+        gap: 20px;
+    }
+
+    @include mixins.mobile-device {
+        flex-wrap: wrap;
+    }
+}
+
+.contact-bottom > div > a:link {
+    color: pallette.$primary-color;
+}
+
+.contact-bottom > div > a:visited {
+    color: pallette.$primary-color;
+}
+
+.contact-bottom > div > a:hover {
+    color: pallette.$link-active-color;
+}

@@ -1,0 +1,31 @@
+@use "pallette";
+@use "mixins";
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3%;
+    margin: 0% 2% pallette.$content-spacing 2%;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    &__text {
+        padding: 10px;
+        &--heading {
+            font-size: pallette.$tertiary-Heading-size;
+            color: pallette.$primary-color;
+        }
+
+        &--para {
+            max-height: 400px;
+            max-width: 400px;
+            color: pallette.$text-color;
+        }
+    }
+
+    &__img {
+        height: 300px;
+        width: 225px;
+    }
+}

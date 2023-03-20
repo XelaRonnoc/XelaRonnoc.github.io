@@ -1,0 +1,83 @@
+@use "header";
+@use "landing";
+@use "about";
+@use "skills";
+@use "projects";
+@use "contact";
+@use "pallette";
+@use "mixins";
+
+body {
+    background-color: pallette.$base-color;
+    font-family: "Orbitron", sans-serif;
+}
+
+div {
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.page-holder {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 20px 0px 20px;
+    max-width: 1500px;
+}
+
+.shadow {
+    background-color: pallette.$base-highlight;
+    box-shadow: 10px 10px 10px rgba($color: pallette.$shadow-color, $alpha: 0.5);
+}
+
+.heading {
+    @include mixins.mobile-device {
+        text-align: center;
+    }
+}
+
+.para {
+    @include mixins.mobile-device {
+        text-align: center;
+    }
+}
+
+@include mixins.monitor {
+    .reveal {
+        position: relative;
+        transform: translateY(10px);
+        opacity: 0;
+        transition: 2s all ease;
+    }
+    .reveal.active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#homePage {
+    scroll-margin-top: 40vh;
+}
+
+#aboutPage {
+    scroll-margin-top: 60vh;
+}
+
+#skillsPage {
+    scroll-margin-top: 10vh;
+}
+
+#projectPage {
+    scroll-margin-top: 10vh;
+}
+#contactPage {
+    scroll-margin-top: 20vh;
+}
