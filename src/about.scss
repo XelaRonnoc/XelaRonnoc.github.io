@@ -1,33 +1,31 @@
-@import "pallette";
+@use "pallette";
+@use "mixins";
 
 .about {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: 5%;
-    // border: $test-border orange;
+    justify-content: space-around;
+    padding: 3%;
+    margin: 0% 2% pallette.$content-spacing 2%;
     flex-wrap: wrap;
+    gap: 50px;
 
-    &__about-text {
-        //   border: $test-border hotpink;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    &__text {
+        padding: 10px;
+        &--heading {
+            font-size: pallette.$tertiary-Heading-size;
+            color: pallette.$primary-color;
+        }
+
+        &--para {
+            max-height: 400px;
+            max-width: 400px;
+            color: pallette.$text-color;
+        }
     }
-}
 
-.about-text-container {
-    &__heading {
-        text-align: center;
-
-        //  border: $test-border red;
-        color: $primary-color;
-    }
-
-    &__para {
-        // border: $test-border grey;
-        max-height: 400px;
-        max-width: 400px;
-        color: $text-color;
+    &__img {
+        height: 300px;
+        width: 225px;
     }
 }

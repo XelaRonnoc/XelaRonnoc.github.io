@@ -5,142 +5,212 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Rubik+Iso&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6c7029be62.js" crossorigin="anonymous"></script>
+        <script src="./script.js" defer></script>
         <title>Alex Milton</title>
     </head>
     <body>
-        <header class="head-container">
-            <div class="head-container__logo">
-                <img
-                    src="./images/LOGO2(TRANSPARANCY).png"
-                    alt="Milton Strength and Conditioning Logo"
-                />
+        <header class="header-container">
+            <div class="header-container__logo">
+                <h1 class="header-container__logo--heading">Alex Milton</h1>
             </div>
-            <nav class="head-container__nav-bar">
-                <a class="lnks" href="">Home</a>
-                <a class="lnks" href="">About</a>
-                <a class="lnks" href="">Skills</a>
-                <a class="lnks" href="">Projects</a>
-                <a class="lnks" href="">Contact</a>
+            <nav class="header-container__nav-bar">
+                <div class="header-container__nav-bar--lnk header-container__nav-bar--outer-lnk  "><i class="fa-solid fa-list header-container__nav-bar--icon"></i>
+                    <div class="header-container__nav-bar--group">
+                        <a class="header-container__nav-bar--lnk header-container__nav-bar--inner-lnk" href="#homePage"><p>Home</p></a>
+                        <a class="header-container__nav-bar--lnk header-container__nav-bar--inner-lnk" href="#aboutPage"><p>About</p></a>
+                        <a class="header-container__nav-bar--lnk header-container__nav-bar--inner-lnk" href="#skillsPage"><p>Skills</p></a>
+                        <a class="header-container__nav-bar--lnk header-container__nav-bar--inner-lnk" href="#projectPage"><p>Projects</p></a>
+                        <a class="header-container__nav-bar--lnk header-container__nav-bar--inner-lnk" href="#contactPage"><p>Contact</p></a>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <main>
             <section class="page-holder">
-                <section class="home">
-                    <h1>Alex Milton: Trainee Software Developer</h1>
+                <section id="homePage" class="home">
+                    <h1 class="heading home__header">Alex Milton: Trainee Software Developer</h1>
                 </section>
 
-                <section class="about">
+                <section id="aboutPage" class="about reveal">
                     <img
-                        class="about__img"
-                        src="http://placekitten.com/200/300"
+                        class="about__img shadow"
+                        src="./images/profilePhoto.jpeg"
                         alt="kitten placeholder"
                     />
-                    <div class="about__about-text about-text-container">
-                        <h2 class="about-text-container__heading">About Me</h2>
-                        <p class="about-text-container__para">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Inventore reprehenderit vitae architecto omnis
-                            porro, libero deserunt enim possimus dolorum ut hic
-                            illo odit pariatur consequuntur laudantium rem.
-                            Necessitatibus, aperiam reiciendis?
+                    <!-- note above image is also a place holder will attempt to get
+                    better more software eng specific one -->
+                    <div class="about__text shadow">
+                        <h2 class="heading about__text--heading">About Me</h2>
+                        <p class="para about__text--para">
+                            Hi i'm Alex, a personal trainer and case manager turned
+                            trainee software engineer based in Sydney. I love
+                            developing interactive systems from applications
+                            and websites to games. 
+                            
+
+                        </p>
+                        <p class="para about__text--para">
+                            Outside of coding, I enjoy painting minatuires,
+                            desiging games, and doing archery.
                         </p>
                     </div>
                 </section>
 
-                <section class="skills">
-                    <div class="skills__container">
-                        <h1 class="container__logo">HTML</h1>
+
+                <section id="skillsPage" class="skills reveal">
+                    <h2 class="heading skills__header">Languages and Stacks</h2>
+
+                    <section class="logos">
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                            alt="HTML 5"
+                        />
                         <p class="container__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolorem sequi quo recusandae pariatur
-                            doloremque magnam necessitatibus harum vitae? Harum,
-                            laboriosam?
-                        </p>
+                            HTML 5
                     </div>
 
-                    <div class="skills__container">
-                        <h1 class="container__logo">CSS</h1>
-                        <p class="container__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolorem sequi quo recusandae pariatur
-                            doloremque magnam necessitatibus harum vitae? Harum,
-                            laboriosam?
-                        </p>
+                    <div class="logos__container shadow">
+                            <img
+                                class="container__logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                                alt="SASS"
+                            />
+                        <p class="container__desc">SASS</p>
                     </div>
-                    <div class="skills__container">
-                        <h1 class="container__logo">SCSS</h1>
-                        <p class="container__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolorem sequi quo recusandae pariatur
-                            doloremque magnam necessitatibus harum vitae? Harum,
-                            laboriosam?
-                        </p>
+
+                    <div class="logos__container shadow">
+                            <img
+                                class="container__logo"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                                alt="CSS"
+                            />
+                        <p class="container__desc">CSS</p>
                     </div>
-                    <div class="skills__container">
-                        <h1 class="container__logo">Java</h1>
-                        <p class="container__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolorem sequi quo recusandae pariatur
-                            doloremque magnam necessitatibus harum vitae? Harum,
-                            laboriosam?
-                        </p>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript"
+                        />
+                        <p class="container__desc">JavaScript</p>
                     </div>
-                    <div class="skills__container">
-                        <h1 class="container__logo">C#</h1>
-                        <p class="container__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolorem sequi quo recusandae pariatur
-                            doloremque magnam necessitatibus harum vitae? Harum,
-                            laboriosam?
-                        </p>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                            alt="ReactJS"
+                        />
+                        <p class="container__desc">ReactJS</p>
                     </div>
-                    <div class="skills__container">
-                        <h1 class="container__logo">Unreal Engine 5</h1>
-                        <p class="container__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolorem sequi quo recusandae pariatur
-                            doloremque magnam necessitatibus harum vitae? Harum,
-                            laboriosam?
-                        </p>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
+                            alt="Firebase"
+                        />
+                        <p class="container__desc">Firebase</p>
                     </div>
-                    <div class="skills__container">
-                        <h1 class="container__logo">
-                            Object Oriented Programing
-                        </h1>
-                        <p class="container__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolorem sequi quo recusandae pariatur
-                            doloremque magnam necessitatibus harum vitae? Harum,
-                            laboriosam?
-                        </p>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                            alt="mySQL"
+                        />
+                        <p class="container__desc">mySQL</p>
                     </div>
-                    <div class="skills__container">
-                        <h1 class="container__logo">Git</h1>
-                        <p class="container__desc">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Dolorem sequi quo recusandae pariatur
-                            doloremque magnam necessitatibus harum vitae? Harum,
-                            laboriosam?
-                        </p>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"
+                            alt="spring"
+                        />
+                        <p class="container__desc">Spring Boot</p>
                     </div>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+                            alt="java"
+                        />
+                        <p class="container__desc">Java</p>
+                    </div>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+                            alt="git"
+                        />
+                        <p class="container__desc">Git</p>
+                    </div>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                            alt="AWS"
+                        />
+                        <p class="container__desc">AWS</p>
+                    </div>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                            alt="C Sharp"
+                        />
+                        <p class="container__desc">C#</p>
+                    </div>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg"
+                            alt="Unity"
+                        />
+                        <p class="container__desc">Unity</p>
+                    </div>
+
+                    <div class="logos__container shadow">
+                        <img
+                            class="container__logo"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg"
+                            alt="Unreal Engine"
+                        />
+                        <p class="container__desc">Unreal Engine</p>
+                    </div>
+                    </section>
                 </section>
 
-                <section class="projects">
+                <section id="projectPage" class="projects reveal">
+                    <h2 class="heading projects__header">Projects</h1>
                     <div class="projects__project-container">
                         <img
-                            clas="project-container__img"
-                            src="http://placekitten.com/200/300"
+                            class="project-container__img shadow"
+                            src="http://placekitten.com/300/300"
                             alt="placekitten"
                         />
-                        <div class="project-container__text-container">
-                            <h2>Project 1</h2>
-                            <p>
+                        <div class="project-container__text-container shadow">
+                            <h2 class="heading">Project 1</h2>
+                            <p class="para">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Ut fuga sunt ipsum voluptatum
                                 eius, vero maxime consequuntur dolore
                                 praesentium consectetur! Dolore ipsum corrupti
-                                quod repellat tempore aliquam ex fuga laborum.
+                                quod repellat tempore aliquam ex fuga laborum.<a href="https://github.com/XelaRonnoc">GitHub</a>
                             </p>
                         </div>
                     </div>
@@ -148,37 +218,37 @@
                     <div
                         class="projects__project-container projects__project-container--reversed"
                     >
-                        <div class="project-container__text-container">
-                            <h2>Project 2</h2>
-                            <p>
+                        <div class="project-container__text-container shadow">
+                            <h2 class="heading">Project 2</h2>
+                            <p class="para">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Ut fuga sunt ipsum voluptatum
                                 eius, vero maxime consequuntur dolore
                                 praesentium consectetur! Dolore ipsum corrupti
-                                quod repellat tempore aliquam ex fuga laborum.
+                                quod repellat tempore aliquam ex fuga laborum.<a href="https://github.com/XelaRonnoc">GitHub</a>
                             </p>
                         </div>
                         <img
-                            clas="project-container__img"
-                            src="http://placekitten.com/200/300"
+                            class="project-container__img shadow"
+                            src="http://placekitten.com/300/300"
                             alt="placekitten"
                         />
                     </div>
 
                     <div class="projects__project-container">
                         <img
-                            clas="project-container__img"
-                            src="http://placekitten.com/200/300"
+                            class="project-container__img shadow"
+                            src="http://placekitten.com/300/300"
                             alt="placekitten"
                         />
-                        <div class="project-container__text-container">
-                            <h2>Project 3</h2>
-                            <p>
+                        <div class="project-container__text-container shadow">
+                            <h2 class="heading">Project 3</h2>
+                            <p class="para">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Ut fuga sunt ipsum voluptatum
                                 eius, vero maxime consequuntur dolore
                                 praesentium consectetur! Dolore ipsum corrupti
-                                quod repellat tempore aliquam ex fuga laborum.
+                                quod repellat tempore aliquam ex fuga laborum.<a href="https://github.com/XelaRonnoc">GitHub</a>
                             </p>
                         </div>
                     </div>
@@ -186,51 +256,79 @@
                     <div
                         class="projects__project-container projects__project-container--reversed"
                     >
-                        <div class="project-container__text-container">
-                            <h2>Project 4</h2>
-                            <p>
+                        <div class="project-container__text-container shadow">
+                            <h2 class="heading">Project 4</h2>
+                            <p class="para">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Ut fuga sunt ipsum voluptatum
                                 eius, vero maxime consequuntur dolore
                                 praesentium consectetur! Dolore ipsum corrupti
-                                quod repellat tempore aliquam ex fuga laborum.
+                                quod repellat tempore aliquam ex fuga laborum. <a href="https://github.com/XelaRonnoc">GitHub</a>
                             </p>
                         </div>
                         <img
-                            clas="project-container__img"
-                            src="http://placekitten.com/200/300"
+                            class="project-container__img shadow"
+                            src="http://placekitten.com/300/300"
                             alt="placekitten"
                         />
                     </div>
 
                     <div class="projects__project-container">
                         <img
-                            clas="project-container__img"
-                            src="http://placekitten.com/200/300"
+                            class="project-container__img shadow"
+                            src="http://placekitten.com/300/300"
                             alt="placekitten"
                         />
-                        <div class="project-container__text-container">
-                            <h2>Project 5</h2>
-                            <p>
+                        <div class="project-container__text-container shadow">
+                            <h2 class="heading">Project 5</h2>
+                            <p class="para">
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Ut fuga sunt ipsum voluptatum
                                 eius, vero maxime consequuntur dolore
                                 praesentium consectetur! Dolore ipsum corrupti
-                                quod repellat tempore aliquam ex fuga laborum.
+                                quod repellat tempore aliquam ex fuga laborum.<a href="https://github.com/XelaRonnoc">GitHub</a>
                             </p>
                         </div>
                     </div>
+                </section>
+
+                <section id="contactPage" class="contact-bottom">
+                    <h2 class="heading contact__heading">Also find me here:</h2>
+                    <div class="contact-bottom__links">
+                        <a href="https://github.com/XelaRonnoc">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alex-milton-2b72981a7">                    
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        </a>
+                        <a href="mailto:alexcmilton@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+
                 </section>
             </section>
         </main>
 
-        <footer class="contact">
+        <footer  class="contact">
             <div class="contact__bar">
-                <a href="https://github.com/XelaRonnoc">Github</a>
-                <a href="https://www.linkedin.com/in/alex-milton-2b72981a7"
-                    >LinkedIn</a
-                >
-                <p>Email: alexcmilton@gmail.com</p>
+                <a href="https://github.com/XelaRonnoc">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/alex-milton-2b72981a7">                    
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                </a>
+                <a href="mailto:alexcmilton@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <div id="pipes">
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                </div>
             </div>
         </footer>
     </body>

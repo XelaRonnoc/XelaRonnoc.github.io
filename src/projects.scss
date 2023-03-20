@@ -1,8 +1,16 @@
-@import "pallette";
+@use "pallette";
+@use "mixins";
 
 .projects {
     display: flex;
     flex-direction: column;
+    margin-bottom: pallette.$content-spacing;
+
+    &__header {
+        margin: 0px;
+        color: pallette.$primary-color;
+        font-size: pallette.$secondary-heading-size;
+    }
 
     &__project-container {
         display: flex;
@@ -19,15 +27,34 @@
 
 .project-container {
     &__text-container {
+        padding: 10px;
         max-width: 400px;
-        margin: 5%;
+        margin: 3%;
     }
 
     &__text-container > h2 {
-        color: $primary-color;
+        color: pallette.$primary-color;
     }
 
     &__text-container > p {
-        color: $text-color;
+        color: pallette.$text-color;
+    }
+
+    &__text-container a {
+        text-decoration: none;
+        color: pallette.$primary-color;
+    }
+
+    &__text-container a:link {
+        text-decoration: none;
+        color: pallette.$primary-color;
+    }
+    &__text-container a:visited {
+        text-decoration: none;
+        color: pallette.$primary-color;
+    }
+    &__text-container a:hover {
+        text-decoration: none;
+        color: pallette.$link-active-color;
     }
 }

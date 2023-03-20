@@ -1,0 +1,43 @@
+@use "breakpoints";
+
+@mixin phone {
+    @media only screen and (max-width: breakpoints.$sml) {
+        @content; // this lets me leave the mixin empty and pass it new content
+    }
+}
+
+@mixin tablet {
+    @media only screen and (min-width: (breakpoints.$sml + 1px)) and (max-width: breakpoints.$med) {
+        @content; // this lets me leave the mixin empty and pass it new content
+    }
+}
+
+@mixin tablet-landscape {
+    @media only screen and (min-width: (breakpoints.$med + 1px)) and (max-width: breakpoints.$lrg) {
+        @content; // this lets me leave the mixin empty and pass it new content
+    }
+}
+
+@mixin mobile-device {
+    @media only screen and (max-width: breakpoints.$lrg) {
+        @content; // this lets me leave the mixin empty and pass it new content
+    }
+}
+
+@mixin laptop {
+    @media only screen and (min-width: (breakpoints.$lrg + 1px)) and (max-width: breakpoints.$xl) {
+        @content; // this lets me leave the mixin empty and pass it new content
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: (breakpoints.$xl + 1px)) and (max-width: breakpoints.$xxl) {
+        @content; // this lets me leave the mixin empty and pass it new content
+    }
+}
+
+@mixin monitor {
+    @media only screen and (min-width: (breakpoints.$lrg + 1px)) {
+        @content; // this lets me leave the mixin empty and pass it new content
+    }
+}

@@ -1,34 +1,135 @@
-@import "pallette";
+@use "pallette";
+@use "mixins";
 
-.head-container {
-    // border: $test-border yellowgreen;
+header {
+    background-color: pallette.$border-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.header-container {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+
+    @include mixins.mobile-device {
+        justify-content: space-between;
+    }
 
     &__nav-bar {
-        border: 2px solid $border-color;
-        padding: 5px;
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
         gap: 20px;
-        margin: 20px;
+        background-color: pallette.$border-color;
+
+        &--lnk {
+            font-weight: bold;
+            text-decoration: none;
+            color: pallette.$text-color;
+        }
+
+        @include mixins.mobile-device {
+            &--lnk {
+                position: relative;
+                display: block;
+                padding: 10px 15px;
+                text-decoration: none;
+                cursor: pointer;
+                white-space: nowrap;
+                background-color: pallette.$border-color; // placeholder color for links
+                user-select: none;
+                -webkit-tap-highlight-color: transparent;
+                transition: background-color 0.2s;
+            }
+
+            &--lnk:link {
+                color: pallette.$text-color;
+            }
+
+            &--lnk:visited {
+                color: pallette.$text-color;
+            }
+
+            &--lnk:hover {
+                color: pallette.$text-color;
+                background-color: pallette.$border-color-dark; // darker background placeholder colour for links
+            }
+
+            &--lnk:hover &--group {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
+                transition: opacity 0.2s visibility 0.2s transform 0.2s;
+            }
+
+            &--group {
+                position: absolute;
+                top: 100%;
+                right: 1%;
+                min-width: 100%;
+                box-shadow: 0 0 5px rgba (0, 0, 0, 0.2);
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-10px);
+            }
+
+            &--outer-lnk > i {
+                font-size: 32px;
+            }
+        }
+        @include mixins.monitor {
+            width: 80%;
+            &--outer-lnk {
+                height: 100%;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &--group {
+                display: flex;
+                justify-content: left;
+                height: 100%;
+                align-items: center;
+                background-color: pallette.$border-color;
+            }
+
+            &--inner-lnk {
+                border-radius: 12px;
+                padding: 10px;
+                max-height: 50%;
+                width: 100px;
+                text-align: center;
+            }
+
+            &--inner-lnk > p {
+                margin: 0px;
+                align-self: center;
+            }
+
+            &--inner-lnk:hover {
+                color: pallette.$text-color;
+                background-color: pallette.$border-color-dark;
+            }
+
+            &--icon {
+                display: none;
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
     }
-    &__logo > img {
-        //  border: $test-border green;
-        width: 50px;
-        height: 50px;
+
+    &__logo {
+        grid-column: 1 / 2;
+        background-color: pallette.$border-color;
+        &--heading {
+            color: pallette.$text-color;
+            padding: 5px;
+        }
     }
-}
-
-.lnks:link {
-    color: $primary-color;
-}
-
-.lnks:visited {
-    color: $primary-color;
-}
-
-.lnks:hover {
-    color: $link-active-color;
 }
