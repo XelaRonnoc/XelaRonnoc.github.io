@@ -41,3 +41,9 @@
         @content; // this lets me leave the mixin empty and pass it new content
     }
 }
+
+@mixin mobile-landscape {
+    @media only screen and (max-height: (breakpoints.$short)) {
+        @content; // this lets me leave the mixin empty and pass it new content
+    }
+}

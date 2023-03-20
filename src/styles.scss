@@ -22,7 +22,7 @@ img {
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .page-holder {
@@ -68,15 +68,15 @@ main {
 }
 
 #aboutPage {
-    scroll-margin-top: 20vh;
+    scroll-margin-top: 30vh;
 }
 
 #skillsPage {
-    scroll-margin-top: 20vh;
+    scroll-margin-top: 10vh;
 }
 
 #projectPage {
-    scroll-margin-top: 20vh;
+    scroll-margin-top: 10vh;
 }
 #contactPage {
     scroll-margin-top: 20vh;

@@ -131,6 +131,11 @@ header {
   -o-animation: fadeIn 5s;
   -ms-animation: fadeIn 5s;
 }
+@media only screen and (max-width: 1179px) {
+  .home {
+    font-size: 36px;
+  }
+}
 
 @keyframes fadeIn {
   0% {
@@ -278,6 +283,12 @@ header {
   text-decoration: none;
   color: #e11470;
 }
+@media only screen and (max-width: 1179px) {
+  .project-container__img {
+    width: 250px;
+    height: 250px;
+  }
+}
 
 .contact {
   display: flex;
@@ -290,7 +301,8 @@ header {
 }
 @media only screen and (max-width: 580px) {
   .contact {
-    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 .contact__heading {
@@ -328,6 +340,14 @@ header {
   margin: 0;
   padding: 0;
   gap: 0;
+}
+@media only screen and (max-height: 450px) {
+  #pipes {
+    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .contact-bottom {
@@ -376,7 +396,7 @@ img {
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .page-holder {
@@ -421,15 +441,15 @@ main {
 }
 
 #aboutPage {
-  scroll-margin-top: 20vh;
+  scroll-margin-top: 30vh;
 }
 
 #skillsPage {
-  scroll-margin-top: 20vh;
+  scroll-margin-top: 10vh;
 }
 
 #projectPage {
-  scroll-margin-top: 20vh;
+  scroll-margin-top: 10vh;
 }
 
 #contactPage {

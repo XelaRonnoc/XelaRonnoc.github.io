@@ -57,4 +57,11 @@
         text-decoration: none;
         color: pallette.$link-active-color;
     }
+
+    &__img {
+        @include mixins.mobile-device {
+            width: 250px;
+            height: 250px;
+        }
+    }
 }
