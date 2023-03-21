@@ -16,6 +16,16 @@ header {
     justify-content: space-between;
   }
 }
+@media only screen and (max-width: 580px) {
+  .header-container {
+    height: 70px;
+  }
+}
+@media only screen and (max-height: 450px) {
+  .header-container {
+    height: 60px;
+  }
+}
 .header-container__nav-bar {
   display: flex;
   justify-content: center;
@@ -41,22 +51,38 @@ header {
     -webkit-tap-highlight-color: transparent;
     transition: background-color 0.2s;
   }
+}
+@media only screen and (max-width: 1178px) and (max-height: 450px) {
+  .header-container__nav-bar--lnk {
+    font-size: x-small;
+    padding: 4px 6px;
+  }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--lnk:link {
     color: #f6f7f8;
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--lnk:visited {
     color: #f6f7f8;
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--lnk:hover {
     color: #f6f7f8;
     background-color: #3a7392;
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--lnk:hover .header-container__nav-bar--group {
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
     transition: opacity 0.2s visibility 0.2s transform 0.2s;
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--group {
     position: absolute;
     top: 100%;
@@ -67,6 +93,8 @@ header {
     visibility: hidden;
     transform: translateY(-10px);
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--outer-lnk > i {
     font-size: 32px;
   }
@@ -117,6 +145,16 @@ header {
 .header-container__logo--heading {
   color: #f6f7f8;
   padding: 5px;
+}
+@media only screen and (max-width: 580px) {
+  .header-container__logo--heading {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-height: 450px) {
+  .header-container__logo--heading {
+    font-size: 24px;
+  }
 }
 
 .home {
@@ -443,9 +481,19 @@ img {
 #homePage {
   scroll-margin-top: 40vh;
 }
+@media only screen and (max-width: 1178px) {
+  #homePage {
+    scroll-margin-top: 10vh;
+  }
+}
 
 #aboutPage {
   scroll-margin-top: 60vh;
+}
+@media only screen and (max-width: 1178px) {
+  #aboutPage {
+    scroll-margin-top: 10vh;
+  }
 }
 
 #skillsPage {
@@ -455,7 +503,17 @@ img {
 #projectPage {
   scroll-margin-top: 10vh;
 }
+@media only screen and (max-height: 450px) {
+  #projectPage {
+    scroll-margin-top: 20vh;
+  }
+}
 
 #contactPage {
   scroll-margin-top: 20vh;
+}
+@media only screen and (max-height: 450px) {
+  #contactPage {
+    scroll-margin-top: 40vh;
+  }
 }
