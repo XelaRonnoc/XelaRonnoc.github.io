@@ -22,11 +22,11 @@ main {
 }
 
 div {
-    border-radius: 10px;
+    border-radius: pallette.$border-rounding;
 }
 
 img {
-    border-radius: 10px;
+    border-radius: pallette.$border-rounding;
 }
 
 // holds most of main content into the center to avoid distortions on large screens

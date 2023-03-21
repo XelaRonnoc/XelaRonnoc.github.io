@@ -48,17 +48,30 @@
         color: pallette.$primary-color;
     }
 
-    &__text-container a:link {
-        text-decoration: none;
-        color: pallette.$primary-color;
-    }
-    &__text-container a:visited {
-        text-decoration: none;
-        color: pallette.$primary-color;
-    }
-    &__text-container a:hover {
-        text-decoration: none;
-        color: pallette.$link-active-color;
+    &__text-container {
+        &--links {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &--links > a {
+            padding: 5px;
+            border-radius: pallette.$border-rounding;
+        }
+
+        &--links a:link {
+            text-decoration: none;
+            color: pallette.$primary-color;
+        }
+        &--links a:visited {
+            text-decoration: none;
+            color: pallette.$primary-color;
+        }
+        &--links a:hover {
+            background-color: pallette.$base-color;
+            text-decoration: none;
+            color: pallette.$link-active-color;
+        }
     }
 
     // reduce image size on mobile devices so as to avoid strange wrapping behaviour of other classes on very small screens
