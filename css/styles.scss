@@ -7,9 +7,18 @@
 @use "pallette";
 @use "mixins";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: pallette.$base-color;
     font-family: "Orbitron", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 div {
@@ -20,11 +29,7 @@ img {
     border-radius: 10px;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-}
-
+// holds most of main content into the center to avoid distortions on large screens
 .page-holder {
     padding: 50px;
     display: flex;
@@ -50,6 +55,7 @@ main {
     }
 }
 
+// scroll animation css
 @include mixins.monitor {
     .reveal {
         position: relative;

@@ -17,7 +17,7 @@ function reveal() {
     }
 }
 
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal); // checks for event scroll
 
 // To check the scroll position on page load
 reveal();

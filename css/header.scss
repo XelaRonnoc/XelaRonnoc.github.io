@@ -2,6 +2,7 @@
 @use "mixins";
 
 header {
+    //lock banner to top and display in front of page
     background-color: pallette.$border-color;
     position: fixed;
     top: 0;
@@ -14,6 +15,7 @@ header {
     display: flex;
     gap: 20px;
 
+    // spread apart Logo and Nav bar when in mobile drop down form
     @include mixins.mobile-device {
         justify-content: space-between;
     }
@@ -32,6 +34,7 @@ header {
         }
 
         @include mixins.mobile-device {
+            // drop down menu for when in mobile device size
             &--lnk {
                 position: relative;
                 display: block;
@@ -55,9 +58,10 @@ header {
 
             &--lnk:hover {
                 color: pallette.$text-color;
-                background-color: pallette.$border-color-dark; // darker background placeholder colour for links
+                background-color: pallette.$border-color-dark;
             }
 
+            //make nav group visible
             &--lnk:hover &--group {
                 opacity: 1;
                 visibility: visible;
@@ -65,6 +69,7 @@ header {
                 transition: opacity 0.2s visibility 0.2s transform 0.2s;
             }
 
+            // hide the group of actual navigation options
             &--group {
                 position: absolute;
                 top: 100%;
@@ -76,10 +81,12 @@ header {
                 transform: translateY(-10px);
             }
 
+            // drop down icon
             &--outer-lnk > i {
                 font-size: 32px;
             }
         }
+        // change to banner nav bar in monitor view
         @include mixins.monitor {
             width: 80%;
             &--outer-lnk {
@@ -97,6 +104,7 @@ header {
                 background-color: pallette.$border-color;
             }
 
+            // style of nav bar buttons
             &--inner-lnk {
                 border-radius: 12px;
                 padding: 10px;
@@ -115,6 +123,7 @@ header {
                 background-color: pallette.$border-color-dark;
             }
 
+            // hides the icon for drop down menu and prevents it interacting with other nav bar items
             &--icon {
                 display: none;
                 position: absolute;
@@ -124,6 +133,7 @@ header {
         }
     }
 
+    // currently my name in top left corner
     &__logo {
         grid-column: 1 / 2;
         background-color: pallette.$border-color;
