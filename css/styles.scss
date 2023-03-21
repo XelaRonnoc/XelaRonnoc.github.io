@@ -71,10 +71,16 @@ img {
 
 #homePage {
     scroll-margin-top: 40vh;
+    @include mixins.mobile-device {
+        scroll-margin-top: 10vh;
+    }
 }
 
 #aboutPage {
     scroll-margin-top: 60vh;
+    @include mixins.mobile-device {
+        scroll-margin-top: 10vh;
+    }
 }
 
 #skillsPage {
@@ -83,7 +89,13 @@ img {
 
 #projectPage {
     scroll-margin-top: 10vh;
+    @include mixins.mobile-landscape {
+        scroll-margin-top: 20vh;
+    }
 }
 #contactPage {
     scroll-margin-top: 20vh;
+    @include mixins.mobile-landscape {
+        scroll-margin-top: 40vh;
+    }
 }
