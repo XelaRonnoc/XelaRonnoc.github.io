@@ -11,7 +11,7 @@ header {
   display: flex;
   gap: 20px;
 }
-@media only screen and (max-width: 1179px) {
+@media only screen and (max-width: 1178px) {
   .header-container {
     justify-content: space-between;
   }
@@ -28,7 +28,7 @@ header {
   text-decoration: none;
   color: #f6f7f8;
 }
-@media only screen and (max-width: 1179px) {
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--lnk {
     position: relative;
     display: block;
@@ -71,7 +71,7 @@ header {
     font-size: 32px;
   }
 }
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 1179px) {
   .header-container__nav-bar {
     width: 80%;
   }
@@ -131,7 +131,7 @@ header {
   -o-animation: fadeIn 5s;
   -ms-animation: fadeIn 5s;
 }
-@media only screen and (max-width: 1179px) {
+@media only screen and (max-width: 1178px) {
   .home {
     font-size: 36px;
   }
@@ -271,19 +271,28 @@ header {
   text-decoration: none;
   color: #20a4f3;
 }
-.project-container__text-container a:link {
+.project-container__text-container--links {
+  display: flex;
+  justify-content: space-around;
+}
+.project-container__text-container--links > a {
+  padding: 5px;
+  border-radius: 10px;
+}
+.project-container__text-container--links a:link {
   text-decoration: none;
   color: #20a4f3;
 }
-.project-container__text-container a:visited {
+.project-container__text-container--links a:visited {
   text-decoration: none;
   color: #20a4f3;
 }
-.project-container__text-container a:hover {
+.project-container__text-container--links a:hover {
+  background-color: #02223c;
   text-decoration: none;
   color: #e11470;
 }
-@media only screen and (max-width: 1179px) {
+@media only screen and (max-width: 1178px) {
   .project-container__img {
     width: 250px;
     height: 250px;
@@ -354,7 +363,7 @@ header {
   display: flex;
   gap: 20px;
 }
-@media only screen and (max-width: 1179px) {
+@media only screen and (max-width: 1178px) {
   .contact-bottom {
     flex-wrap: wrap;
   }
@@ -407,19 +416,19 @@ img {
   box-shadow: 10px 10px 10px rgba(1, 11, 19, 0.5);
 }
 
-@media only screen and (max-width: 1179px) {
+@media only screen and (max-width: 1178px) {
   .heading {
     text-align: center;
   }
 }
 
-@media only screen and (max-width: 1179px) {
+@media only screen and (max-width: 1178px) {
   .para {
     text-align: center;
   }
 }
 
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 1179px) {
   .reveal {
     position: relative;
     transform: translateY(10px);
