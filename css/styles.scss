@@ -31,10 +31,10 @@ img {
 
 // holds most of main content into the center to avoid distortions on large screens
 .page-holder {
-    padding: 50px;
+    // padding: 50px;
     display: flex;
     flex-direction: column;
-    margin: 100px 20px 0px 20px;
+    // margin: 100px 20px 0px 20px;
     max-width: 1500px;
 }
 
@@ -61,7 +61,7 @@ img {
         position: relative;
         transform: translateY(10px);
         opacity: 0;
-        transition: 2s all ease;
+        transition: 1s all ease;
     }
     .reveal.active {
         transform: translateY(0px);

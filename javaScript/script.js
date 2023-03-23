@@ -18,6 +18,18 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal); // checks for event scroll
+// document
+//     .getElementsByClassName("header-container__nav-bar--icon")
+//     .addEventListener("click", close);
+
+// function close() {
+//     let dropDown = document.getElementsByClassName(
+//         "header-container__nav-bar--group"
+//     );
+//     if (dropDown.style.visibility !== "hidden") {
+//         dropDown.style.visibility = "visible";
+//     }
+// }
 
 // To check the scroll position on page load
 reveal();
