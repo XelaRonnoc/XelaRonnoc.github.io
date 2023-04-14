@@ -19,6 +19,9 @@
     @include mixins.mobile-device {
         font-size: pallette.$secondary-heading-size;
     }
+    &__header {
+        margin: 20px 35px;
+    }
 }
 
 @keyframes fadeIn {

@@ -49,6 +49,10 @@ img {
     }
 }
 
+.main-headers {
+    margin: 20px 35px;
+}
+
 .para {
     @include mixins.mobile-device {
         text-align: center;
