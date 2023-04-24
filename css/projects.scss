@@ -81,6 +81,8 @@
 
     // reduce image size on mobile devices so as to avoid strange wrapping behaviour of other classes on very small screens
     &__img {
+        align-self: center;
+        justify-self: center;
         width: 400px;
         @include mixins.mobile-device {
             width: 250px;
