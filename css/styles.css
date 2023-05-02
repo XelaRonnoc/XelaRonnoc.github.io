@@ -62,19 +62,27 @@ header {
   .header-container__nav-bar--lnk:link {
     color: #f6f7f8;
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--lnk:visited {
     color: #f6f7f8;
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--lnk:hover {
     color: #f6f7f8;
     background-color: #3a7392;
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--lnk:hover .header-container__nav-bar--group {
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
     transition: opacity 0.2s visibility 0.2s transform 0.2s;
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--group {
     position: absolute;
     top: 100%;
@@ -85,6 +93,8 @@ header {
     visibility: hidden;
     transform: translateY(-10px);
   }
+}
+@media only screen and (max-width: 1178px) {
   .header-container__nav-bar--outer-lnk > i {
     font-size: 32px;
   }
@@ -231,7 +241,6 @@ header {
 }
 .about__img {
   height: 300px;
-  width: 225px;
 }
 
 .skills {
